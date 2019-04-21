@@ -1,0 +1,30 @@
+@model Student
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanks</title>
+</head>
+<body>
+    <h2>Merhaba , @Model.Name</h2>
+    <hr>
+    @if(Model.Confirm==true){
+        <span>
+            Kursa Katıldığınız için Teşekkür ederiz.
+        </span>
+        <div>
+            Diğer katılımcıları <a asp-action="List">görüntüle.</a>
+        </div>
+    }else if(Model.Confirm == false){
+        <span>
+            Üzüldük.Fikrin değişir inşallah
+        </span>      
+    }
+    else
+        {
+            <span>Seçim Yapmadınız</span>
+        }
+</body>
+</html>

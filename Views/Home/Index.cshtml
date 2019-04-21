@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="/modules/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="~/css/style.css"> -->
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card mx-auto" style="width:500px;">
+            <div class="card-header">
+                @ViewBag.Greeting @ViewBag.UserName ,Nasılsınız? Saat Şuan @ViewBag.saat
+            </div>
+            <div class="card-body">
+                <p class="cardtext">
+                    Sayfayı Beğendiniz mi?
+                </p>
+                 <a asp-action="apply" class="btn btn-primary" asp-controller="course">Başvurunuzu Yapınız</a>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    
+</body>
+</html>
